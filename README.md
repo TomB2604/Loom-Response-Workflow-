@@ -35,9 +35,20 @@ The pipeline does two things:
 ## Requirements
 
 - MATLAB R2020a or later
-- Image Processing Toolbox
+- Image Processing Toolbox  
 - VideoReader-compatible .avi recordings
 - Tracking .mat files (idx, idy coordinates) generated via Storchi et al. (2020)
+
+### Camera and Arena Setup Note
+This pipeline was developed for a specific hardware configuration in which 
+behavioural recordings were acquired using an infrared camera positioned below 
+the arena. Because the infrared camera cannot detect the dark expanding disc 
+presented on the ceiling monitor, loom onset is instead identified from two 
+small white indicator boxes displayed simultaneously on the monitor at stimulus 
+onset, which appear as bright flashes in the camera frame. The ROI in 
+Loom_signal_coordinate.m must be drawn over one of these indicator boxes. 
+This pipeline will not function correctly without this or an equivalent 
+frame-visible onset signal.
 
 ## Pipeline Overview
 
