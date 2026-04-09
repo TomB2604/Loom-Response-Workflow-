@@ -16,8 +16,7 @@ indicator light visible in the camera frame provides a frame-accurate signal
 of loom onset. This allows each loom event to be automatically detected and
 clipped from the raw video without manual timestamp entry.
 
-![Camera view showing from below stimulus onset indicators](example_data/arena_example.png)
-<img width="500" height="400" alt="frame_080_threat" src="https://github.com/user-attachments/assets/4b15870c-ff73-4049-b4f2-8b821ac900cb" />
+<img src="https://github.com/user-attachments/assets/4b15870c-ff73-4049-b4f2-8b821ac900cb" width="450" alt="Camera view from below showing animal tracking overlay and stimulus onset indicators"/>
 
 The pipeline does two things:
 
