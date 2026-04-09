@@ -182,16 +182,6 @@ rearing, no response) and general exploration are available here:
 
 ---
 
-## Citation
-
-If you use these scripts, please cite:
-
-> Brazier, T., Allen, A., and Pienaar, A. (2026). *Time-of-day differences
-> in visually evoked defensive responses in mice*. MSci Thesis, University
-> of Manchester.
-
----
-
 ## Acknowledgements
 
 Animal tracking was performed using scripts developed by Storchi et al. (2020).
