@@ -17,7 +17,7 @@ of loom onset. This allows each loom event to be automatically detected and
 clipped from the raw video without manual timestamp entry.
 
 ![Arena view showing loom disc, animal tracking overlay, and stimulus onset 
-indicators](example_data/arena_example.png)<img width="1280" height="1024" alt="frame_080_threat" src="https://github.com/user-attachments/assets/4b15870c-ff73-4049-b4f2-8b821ac900cb" />
+indicators](example_data/arena_example.png)<img width="500" height="400" alt="frame_080_threat" src="https://github.com/user-attachments/assets/4b15870c-ff73-4049-b4f2-8b821ac900cb" />
 
 The pipeline does two things:
 
