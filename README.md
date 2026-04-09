@@ -20,11 +20,11 @@ clipped from the raw video without manual timestamp entry.
 
 The pipeline does two things:
 
-1. **Automated clip generation** -- detects every loom onset from the indicator
+1. **Automated clip generation**: detects every loom onset from the indicator
    light signal and exports a trimmed .mp4 clip for each event across one or
    more animals.
 
-2. **Escape response analysis** -- confirms manually scored escape responses
+2. **Escape response analysis**: confirms manually scored escape responses
    using a speed threshold (>30 cm/s), and extracts peak speed and reaction
    time from each confirmed escape. This analysis depends on frame-by-frame
    animal tracking performed using a custom box-tracking algorithm, as described
@@ -38,3 +38,33 @@ The pipeline does two things:
 - Image Processing Toolbox
 - VideoReader-compatible .avi recordings
 - Tracking .mat files (idx, idy coordinates) generated via Storchi et al. (2020)
+
+## Pipeline Overview
+
+```
+Raw .avi recording
+       |
+       v
+[1] Loom_signal_coordinate.m
+    Define the ROI over the indicator light in the camera frame
+       |
+       v
+[2] batch2_detect_loom_from_roi_poc_to_excel.m
+    Detect loom onset times from ROI brightness, export to Excel
+       |
+       v
+[3] make_loom_clips_from_excel.m
+    Generate one .mp4 clip per loom event per animal
+       |
+       v
+    Manual behavioural scoring
+    (no response / rearing / freezing / escape)
+       |
+       v
+[4] Speed_Classification.m
+    Confirm escape responses via 30 cm/s speed threshold
+       |
+       v
+[5] Reaction_time_manual_scoring.m
+    Extract peak speed and reaction time for confirmed escapes
+```
