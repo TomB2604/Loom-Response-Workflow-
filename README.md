@@ -55,31 +55,33 @@ equivalent frame-visible onset signal.
 
 ## Pipeline Overview
 
+```
 Raw .avi recording
-|
-v
+       |
+       v
 [1] Loom_signal_coordinate.m
-Define the ROI over the indicator light in the camera frame
-|
-v
+    Define the ROI over the indicator light in the camera frame
+       |
+       v
 [2] detect_loom_onsets_to_excel.m
-Detect loom onset times from ROI brightness, export to Excel
-|
-v
+    Detect loom onset times from ROI brightness, export to Excel
+       |
+       v
 [3] make_loom_clips_from_excel.m
-Generate one .mp4 clip per loom event per animal
-|
-v
-Manual behavioural scoring
-(no response / rearing / freezing / escape)
-|
-v
+    Generate one .mp4 clip per loom event per animal
+       |
+       v
+    Manual behavioural scoring
+    (no response / rearing / freezing / escape)
+       |
+       v
 [4] Speed_Classification.m
-Confirm escape responses via 30 cm/s speed threshold
-|
-v
+    Confirm escape responses via 30 cm/s speed threshold
+       |
+       v
 [5] Reaction_time_and_speed_scoring.m
-Extract reaction time and max speed for confirmed escapes
+    Extract reaction time and max speed for confirmed escapes
+```
 
 ## Script Descriptions
 
