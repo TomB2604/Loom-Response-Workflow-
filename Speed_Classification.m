@@ -42,11 +42,6 @@ function xlsxFile = Speed_Classification(mp4Files, matFiles, outTableDir, baseEx
 %   e.g. R_F_Acuity1_Loom01_0-0_to_0-13.mp4
 %
 % -------------------------------------------------------------------------
-% CITATION:
-%   If you use this script please cite:
-%   Brazier, T. (2026). Time-of-day differences in visually evoked defensive
-%   responses in mice. MSci Thesis, University of Manchester.
-% -------------------------------------------------------------------------
 
 %% ================== USER-EDIT ZONE (EDIT THESE VALUES ONLY) =============
 
