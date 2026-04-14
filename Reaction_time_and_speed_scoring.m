@@ -52,11 +52,6 @@ function Reaction_time_and_speed_scoring(searchFolders, outputDir)
 %   by the box-tracking algorithm described in Storchi et al. (2020).
 %
 % -------------------------------------------------------------------------
-% CITATION:
-%   If you use this script please cite:
-%   Brazier, T. (2026). Time-of-day differences in visually evoked defensive
-%   responses in mice. MSci Thesis, University of Manchester.
-% -------------------------------------------------------------------------
 
 %% ================== USER-EDIT ZONE (EDIT THESE VALUES ONLY) =============
 
